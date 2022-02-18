@@ -1,0 +1,65 @@
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+body{
+  background: black;
+  background-repeat:no-repeat;
+  background-size:cover;
+  min-height:100vh;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  height:100%;
+}
+*{
+  white-space:nowrap;
+  font-family: 'Fira Code', monospace;
+}
+#app{
+  width:80%;
+  padding:14px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:0 auto;
+  margin-top:25%;
+
+}
+span{
+  width:100%;
+}
+
+span.flash {
+    padding: 1px 1px;
+    display: inline-block;
+    width:80%;
+    text-align: center;
+    position: relative;
+    transition:all 0.2s;
+    font-size:200%;
+}
+
+
+span.flash span{
+  position:absolute;
+  width:100%;
+  left:0;
+  top:0;
+  background:#000000;
+  color:#FFFFFF;
+  transition:top 0.2s;
+  transform:translateZ(0);
+  line-height:50px;
+}
+
+.designer{
+  z-index:1;
+}
+
+
+@media only screen and (max-width : 350px) {
+  #app{
+    width:100%;
+  }
+}
+
+@supports (font-variation-settings: normal) {
+  code { font-family: 'Fira Code VF', monospace; }
+}
