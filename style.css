@@ -1,7 +1,7 @@
-@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
 *{
   white-space:nowrap;
-  font-family: 'Fira Code', monospace;
+  font-family: 'Shizuru', cursive;
 }
 html, body, canvas {
   height: 100%;
@@ -27,8 +27,8 @@ ul {
   left: 50%;
   transform: translate(-50%,-50%);
   z-index: 10;
-  font-weight: 900;
-  font-size: 30px;
+  /* font-weight: 900; */
+  font-size: 60px;
   text-align: center;
 }
 li{
@@ -36,6 +36,10 @@ li{
   list-style-type: none;
 }
 a{
-  color: rgb(111, 233, 255);
+  color: rgb(98, 112, 116);
+  text-transform: uppercase;
+}
+a:hover{
+  color: rgb(123, 255, 0);
   text-transform: uppercase;
 }
